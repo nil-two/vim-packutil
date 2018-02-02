@@ -1,0 +1,57 @@
+*packutil.txt*   Utility functions to handle vim package.
+
+Version: 0.1.0
+Author : nil2 <kusabashira227@gmail.com>
+License: MIT License
+
+==============================================================================
+CONTENTS                                        *packutil-contents*
+
+INTRODUCTION   |packutil-introduction|
+INTERFACE      |packutil-interface|
+  FUNCTIONS      |packutil-functions|
+CHANGELOG      |packutil-changelog|
+
+
+==============================================================================
+INTRODUCTION                                    *packutil-introduction*
+
+*packutil* provides several utility functions to handle Vim packages.
+
+Requirements:
+- Vim 8.0 or later
+
+Latest version:
+https://github.com/kusabashira/vim-packutil
+
+
+==============================================================================
+INTERFACE                                       *packutil-interface*
+
+------------------------------------------------------------------------------
+FUNCTIONS                                       *packutil-commands*
+
+packutil#packadd({list})                        *packutil#packadd()*
+                Source Vim packages with |pack-add|.
+
+                Examples: >
+>
+                " source vim-go
+                call packutil#packadd(['vim-go'])
+
+                " source emmet-vim and html5.vim
+                call packutil#packadd(['emmet-vim', 'html5.vim'])
+<
+packutil#packadd_force({list})                  *packutil#packadd_force()*
+                Source Vim packages with |pack-add|.
+                Even if a package doen't exist, it won't throw an exception.
+
+
+==============================================================================
+CHANGELOG                                       *packutil-changelog*
+
+0.1.0   2018-02-02
+        - Initial version.
+
+==============================================================================
+vim:tw=78:fo=tcq2mM:ts=8:ft=help:norl
