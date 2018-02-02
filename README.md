@@ -7,7 +7,7 @@ Usage
 -----
 
 ```vim
-" packutil#packadd() source specified packages
+" packutil#packadd() sources specified packages
 augroup opt
   autocmd!
   autocmd FileType go

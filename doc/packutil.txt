@@ -1,4 +1,4 @@
-*packutil.txt*   Utility functions to handle vim package.
+*packutil.txt*   Utility functions to handle Vim packages.
 
 Version: 0.1.0
 Author : nil2 <kusabashira227@gmail.com>
