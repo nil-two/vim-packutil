@@ -32,7 +32,7 @@ INTERFACE                                       *packutil-interface*
 FUNCTIONS                                       *packutil-commands*
 
 packutil#packadd({list})                        *packutil#packadd()*
-                Source Vim packages with |pack-add|.
+                Source Vim packages with |:packadd|.
 
                 Examples: >
 >
@@ -43,7 +43,7 @@ packutil#packadd({list})                        *packutil#packadd()*
                 call packutil#packadd(['emmet-vim', 'html5.vim'])
 <
 packutil#packadd_force({list})                  *packutil#packadd_force()*
-                Source Vim packages with |pack-add|.
+                Source Vim packages with |:packadd|.
                 Even if a package doen't exist, it won't throw an exception.
 
 packutil#helptags({list})                       *packutil#helptags()*
