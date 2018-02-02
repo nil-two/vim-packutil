@@ -24,3 +24,13 @@ function! packutil#helptags(names) abort
     endfor
   endfor
 endfunction
+
+function! packutil#helptags_all() abort
+  let doc_path_glob = 'pack/*/*/*/doc'
+  let doc_pathes    = split(globpath(&rtp, doc_path_glob), '\n')
+  for doc_path in doc_pathes
+    if filewritable(doc_path) == 2 && empty(glob(doc_path . '/tags*'))
+      execute 'helptags' doc_path
+    endif
+  endfor
+endfunction
