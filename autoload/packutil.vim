@@ -1,13 +1,13 @@
 function! packutil#packadd(package_name_list) abort
   for package_name in a:package_name_list
-    execute 'packadd!' package_name
+    execute 'packadd' package_name
   endfor
 endfunction
 
 function! packutil#packadd_force(package_name_list) abort
   for package_name in a:package_name_list
     try 
-      execute 'packadd!' package_name
+      execute 'packadd' package_name
     catch
     endtry
   endfor
