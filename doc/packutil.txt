@@ -49,6 +49,9 @@ packutil#packadd_force({list})                  *packutil#packadd_force()*
 packutil#helptags({list})                       *packutil#helptags()*
                 Generate tags for Vim packages with |:helptags|.
 
+packutil#helptags_all()                         *packutil#helptags_all()*
+                Generate tags for all Vim packages with |:helptags|.
+
 
 ==============================================================================
 CHANGELOG                                       *packutil-changelog*
