@@ -46,6 +46,9 @@ packutil#packadd_force({list})                  *packutil#packadd_force()*
                 Source Vim packages with |pack-add|.
                 Even if a package doen't exist, it won't throw an exception.
 
+packutil#helptags({list})                       *packutil#helptags()*
+                Generate tags for Vim packages with |:helptags|.
+
 
 ==============================================================================
 CHANGELOG                                       *packutil-changelog*
