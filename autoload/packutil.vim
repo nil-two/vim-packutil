@@ -19,17 +19,7 @@ function! s:helptags_one(doc_path) abort
   endif
 endfunction
 
-function! packutil#helptags(package_name_list) abort
-  for package_name in a:package_name_list
-    let doc_path_glob = 'pack/*/*/' . fnameescape(package_name) . '/doc'
-    let doc_path_list = split(globpath(&rtp, doc_path_glob), '\n')
-    for doc_path in doc_path_list
-      call s:helptags_one(doc_path)
-    endfor
-  endfor
-endfunction
-
-function! packutil#helptags_all() abort
+function! packutil#helptags() abort
   let doc_path_glob = 'pack/*/*/*/doc'
   let doc_path_list = split(globpath(&rtp, doc_path_glob), '\n')
   for doc_path in doc_path_list
