@@ -4,15 +4,6 @@ function! packutil#packadd(package_name_list) abort
   endfor
 endfunction
 
-function! packutil#packadd_force(package_name_list) abort
-  for package_name in a:package_name_list
-    try 
-      execute 'packadd' package_name
-    catch
-    endtry
-  endfor
-endfunction
-
 function! s:helptags_one(doc_path) abort
   if filewritable(a:doc_path) == 2 && empty(glob(a:doc_path . '/tags*'))
     execute 'helptags' a:doc_path

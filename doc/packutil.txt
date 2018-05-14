@@ -41,10 +41,6 @@ packutil#packadd({list})                        *packutil#packadd()*
 
                 " source emmet-vim and html5.vim
                 call packutil#packadd(['emmet-vim', 'html5.vim'])
-<
-packutil#packadd_force({list})                  *packutil#packadd_force()*
-                Source Vim packages with |:packadd|.
-                Even if a package doen't exist, it won't throw an exception.
 
 packutil#helptags()                             *packutil#helptags()*
                 Generate tags for all Vim packages with |:helptags|.
