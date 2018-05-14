@@ -17,3 +17,11 @@ function! packutil#helptags() abort
     call s:helptags_one(doc_path)
   endfor
 endfunction
+
+function! packutil#source_ftdetect() abort
+  let ftdetect_path_glob = 'pack/*/opt/*/ftdetect/*'
+  let ftdetect_path_list = split(globpath(&rtp, ftdetect_path_glob), '\n')
+  for ftdetect_path in ftdetect_path_list
+    execute 'source' ftdetect_path
+  endfor
+endfunction

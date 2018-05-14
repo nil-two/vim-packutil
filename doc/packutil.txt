@@ -45,6 +45,9 @@ packutil#packadd({list})                        *packutil#packadd()*
 packutil#helptags()                             *packutil#helptags()*
                 Generate tags for all Vim packages with |:helptags|.
 
+packutil#source_ftdetect()                      *packutil#source_ftdetect()*
+                Source all ftdetect scripts in all Vim packages.
+
 
 ==============================================================================
 CHANGELOG                                       *packutil-changelog*
