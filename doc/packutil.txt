@@ -22,7 +22,7 @@ Requirements:
 - Vim 8.0 or later
 
 Latest version:
-https://github.com/nil2nekoni/vim-packutil
+https://github.com/nil-two/vim-packutil
 
 
 ==============================================================================
